@@ -2,17 +2,18 @@
 <strong>This script uses PRAW (you'll need it installed).</strong><br>
 At the beginning of the script, you should find the following right underneath the imports:<br>
 <img src="params.png" alt="Params"/><br>
-<strong>>path</strong> - the full path to the location to save/keep the wallpapers.<br>
+<strong>path</strong> - the full path to the location to save/keep the wallpapers.<br>
 <strong>maxAmt</strong> - the max amount of wallpapers to keep saved.<br>
 <strong>postAmt</strong> - the amount of top posts (wallpapers) to save each time the script downloads wallpapers.<br>
 <strong>waitTime</strong> - the amount of time in seconds to wait to update wallpapers. Default is 30 mins.<br>
 <strong>subreddit</strong> - the subreddit(s) to download from. Seperate multiple subreddits by using a '+'.<br>
 <strong>wallpaperCmd</strong> - the system command used to change wallpapers. Default assumes you are using feh to set your wallpaper.<br>
+<br>
 Just change these to however you see fit.<br>
 
 Run this script just as you would any python script, by using the following command:<br>
 <em>python wallpaper.py &</em><br>
-assuming you are in the directory that contains wallpaper.pu.
+(assuming you are in the directory that contains wallpaper.py)<br>
 The '&' will run it in the background.
 
 <h1>Tips</h1>
