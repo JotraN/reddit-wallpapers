@@ -5,7 +5,7 @@ import os
 from urllib.request import urlretrieve
 
 path = "/media/Documents/Python/scripts/wallpapers/"
-maxAmt = 100
+maxAmt = 500
 postAmt = 15
 waitTime = 1800
 subreddit = "wallpaper+wallpapers+spaceporn"
@@ -57,7 +57,7 @@ def change():
         if "wallpaper" in files[i]:
             wallNum = i+1
             if i == len(files)-1:
-                wallNum == 0
+                wallNum = 0
             fullpath = path + files[i]
             os.rename(fullpath, path + str(os.path.getsize(fullpath)) + ".png")
             break
