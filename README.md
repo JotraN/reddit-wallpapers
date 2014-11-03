@@ -1,5 +1,6 @@
 <h1>Set Up</h1>
-<strong>This script uses PRAW (you'll need it installed).</strong><br>
+<strong>This script (<em>wallpaper.py</em>) uses <a href="https://praw.readthedocs.org/">PRAW</a> (you'll need it installed).</strong><br>
+*The optional size.py script uses <a href="https://pillow.readthedocs.org/">Pillow</a>.*<br>
 At the beginning of the script, you should find the following right underneath the imports:<br>
 <img src="params.png" alt="Params"/><br>
 <strong>path</strong> - the full path to the location to save/keep the wallpapers.<br>
@@ -21,4 +22,4 @@ Run this script at start-up.<br>
 Running <em>python wallpaper.py reload</em> will change the current wallpaper manually.<br>
 You should bind this command to allow for even easier changing of wallpapers (I have it binded to SUPER+CTRL+SHIFT+R).<br>
 If you're using this on Windows, you can set <strong>wallpaperCmd</strong> to an empty string ("") and just point Windows to the directory.<br>
-Sometimes wallpapers still manage to fail to download. You'll have to delete these manually or just let it sit in your directory until the script deletes it due to age.<br>
+You can run size.py to delete broken images and images that aren't the desired resolution.<br>
