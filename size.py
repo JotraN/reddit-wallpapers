@@ -19,7 +19,7 @@ def deleteFiles():
             im = Image.open(path+file)
             if im.size[0] != width or im.size[1] != height:
                 os.remove(path + '/' + file)
-                print("DELETED " + file + " (" + im.size[0] + ", " + im.size[1] + ")")
+                print("DELETED " + file + " (" + str(im.size[0]) + ", " + str(im.size[1]) + ")")
             im.close()
         except OSError:
             os.remove(path + '/' + file)
