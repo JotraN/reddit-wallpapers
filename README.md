@@ -9,6 +9,7 @@ At the beginning of the script, you should find the following right underneath t
 <strong>waitTime</strong> - the amount of time in seconds to wait to update wallpapers. Default is 30 mins.<br>
 <strong>subreddit</strong> - the subreddit(s) to download from. Seperate multiple subreddits by using a '+'.<br>
 <strong>wallpaperCmd</strong> - the system command used to change wallpapers. Default assumes you are using feh to set your wallpaper.<br>
+<strong>sizeMatters</strong> -  if true, deletes wallpapers that don't conform to the size provided in <em>size.py</em>.<br>
 <br>
 Just change these to however you see fit.<br>
 

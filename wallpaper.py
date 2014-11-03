@@ -3,6 +3,7 @@ import praw
 import time
 import os
 from urllib.request import urlretrieve
+import size
 
 path = "/media/Documents/Python/scripts/wallpapers/"
 maxAmt = 500
@@ -10,6 +11,7 @@ postAmt = 15
 waitTime = 1800
 subreddit = "wallpaper+wallpapers+spaceporn"
 wallpaperCmd = "exec feh --bg-center '" + path + "wallpaper.png'"
+sizeMatters = True
 
 def getFiles():
     files = os.listdir(path)
@@ -78,6 +80,8 @@ def main():
         download(downloadedFiles)
         change()
         os.system(wallpaperCmd)
+        if sizeMatters:
+            size.deleteFiles();
         time.sleep(waitTime)
 
 if __name__ == "__main__":
