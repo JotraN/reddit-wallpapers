@@ -80,7 +80,7 @@ def delete_wrong_size_wallpapers(path, width, height):
 
 def main():
     if len(sys.argv) > 1 and sys.argv[1] == "reload":
-        change_wallpaper(config.path, config.system_command)
+        change_wallpaper(config.wallpapers_path, config.system_command)
         return
     downloaded_files = []
     # Wait a minute before starting to ensure an internet connection
